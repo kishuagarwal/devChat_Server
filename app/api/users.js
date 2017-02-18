@@ -23,7 +23,8 @@ userRouter.get('/', function(req, res) {
                             username: users[index].username,
                             avatar: users[index].avatar,
                             first_name: users[index].first_name,
-                            last_name: users[index].last_name
+                            last_name: users[index].last_name,
+                            _id: users[index]._id
                         };
                     }
                     res.json(returnedUsers);

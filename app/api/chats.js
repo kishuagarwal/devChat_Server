@@ -16,7 +16,7 @@ chatRouter.get('/', function(req, res) {
             console.log('Chats found' + chats);
             res.json(chats);
         }
-    });
+    }).populate('participants');
 });
 
 chatRouter.post('/', function(req, res) {
