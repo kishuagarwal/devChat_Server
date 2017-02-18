@@ -10,3 +10,4 @@ devChatRouter.use('/users', require('./api/users'));
 devChatRouter.use('/question', require('./api/questions'));
 devChatRouter.use('/comments', require('./api/comments'));
 devChatRouter.use('/messages', require('./api/messages'));
+devChatRouter.use('/chats', require('./api/chats'));

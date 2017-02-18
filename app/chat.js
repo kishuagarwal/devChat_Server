@@ -10,10 +10,14 @@ function onMessage(message) {
     }
 }
 
+// Map users -> socket
 var usersMap = {};
+
+// List of users online right now
 var onlineUsers = {};
+
 var socketMap = {};
-var chatMap = {};
+
 
 wss.on('connection', function(ws) {
     console.log("A client connected");
