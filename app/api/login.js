@@ -35,7 +35,10 @@ loginRouter.post('/', function(req, res) {
                     res.json({status: 404});
                 }
                 else {
-                    res.json({status: 200});
+                    res.json({
+                        status: 200,
+                        user: user,
+                    });
                 }
             }
         });
